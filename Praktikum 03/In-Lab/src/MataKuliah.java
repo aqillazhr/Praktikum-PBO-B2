@@ -12,8 +12,8 @@ public class MataKuliah {
     /* *******************METHOD******************* */
     //konstruktor
     public MataKuliah() {
-        idMatkul = "###";
-        nama = "###";
+        idMatkul = "-";
+        nama = "-";
         sks = 0;
     }
 

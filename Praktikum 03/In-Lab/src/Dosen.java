@@ -12,9 +12,9 @@ public class Dosen {
     /* *******************METHOD******************* */
     //konstruktor
     public Dosen() {
-        nip = "###";
-        nama = "###";
-        prodi = "###";
+        nip = "-";
+        nama = "-";
+        prodi = "-";
     }
 
     public Dosen(String nip, String nama, String prodi) {

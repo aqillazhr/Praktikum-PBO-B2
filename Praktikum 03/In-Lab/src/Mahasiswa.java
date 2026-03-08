@@ -1,7 +1,7 @@
 /* Nama File    : Mahasiswa.java
  * Deskripsi    : berisi atribut dan method dalam class Mahasiswa
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
- * Tanggal      : 7 Februari 2026 */
+ * Tanggal      : 8 Februari 2026 */
 
 import java.util.ArrayList;
 
@@ -17,17 +17,19 @@ public class Mahasiswa {
     /* *******************METHOD******************* */
     //konstruktor
     public Mahasiswa() {
-        this.nim = "###";
-        this.nama = "###";
-        this.prodi = "###";
+        this.nim = "-";
+        this.nama = "-";
+        this.prodi = "-";
         this.listMatkul = new ArrayList<>();
+        this.kendaraan = new Kendaraan();
     }
 
-    public Mahasiswa(String nim, String nama, String prodi, Dosen dosenWali, Kendaraan kendaraan) {
+    public Mahasiswa(String nim, String nama, String prodi, String noPlat, String jenis) {
         this.nim = nim;
         this.nama = nama;
         this.prodi = prodi;
         this.listMatkul = new ArrayList<>();
+        this.kendaraan = new Kendaraan(noPlat, jenis);
     }
 
     //selektor
@@ -41,6 +43,10 @@ public class Mahasiswa {
 
     public String getProdi() {
         return prodi;
+    }
+
+    public ArrayList<MataKuliah> getListMatkul() {
+        return listMatkul;
     }
 
     public Dosen getDosenWali() {
@@ -64,12 +70,12 @@ public class Mahasiswa {
         this.prodi = prodi;
     }
 
-    public void setDosenWali(Dosen dosenWali) {
-        this.dosenWali = dosenWali;
+    public void setListMatkul(ArrayList<MataKuliah> listMatkul) {
+        this.listMatkul = listMatkul;
     }
 
-    public void setKendaraan (Kendaraan kendaraan) {
-        this.kendaraan = kendaraan;
+    public void setDosenWali(Dosen dosenWali) {
+        this.dosenWali = dosenWali;
     }
 
     //method lain
@@ -102,9 +108,9 @@ public class Mahasiswa {
         System.out.println("NIM: " + nim);
         System.out.println("Nama: " + nama);
         System.out.println("Prodi: " + prodi);
-        System.out.println("Data dosen wali\nNama: " + dosenWali.getNama() + "\nNIP: " + dosenWali.getNip() + "\nProdi: " + dosenWali.getProdi());
-        System.out.println("Data kendaraan\nJenis: " + kendaraan.getJenis() + "\nNo plat: " + kendaraan.getnoPlat());
-        System.out.println("Daftar matkul yang diambil oleh mahasiswa");
+        System.out.println("Data Dosen Wali\nNama: " + dosenWali.getNama() + "\nNIP: " + dosenWali.getNip() + "\nProdi: " + dosenWali.getProdi());
+        System.out.println("Data Kendaraan\nJenis: " + kendaraan.getJenis() + "\nNo plat: " + kendaraan.getNoPlat());
+        System.out.println("Mata Kuliah yang Diambil:");
         int i;
         for (i = 0; i < listMatkul.size(); i++) {
             System.out.println(listMatkul.get(i).getNama());

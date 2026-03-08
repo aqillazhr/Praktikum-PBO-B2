@@ -11,8 +11,8 @@ public class Kendaraan {
     /* *******************METHOD******************* */
     //konstruktor
     public Kendaraan() {
-        this.noPlat = "###";
-        this.jenis = "jenis";
+        this.noPlat = "-";
+        this.jenis = "-";
     }
 
     public Kendaraan(String noPlat, String jenis) {
@@ -21,7 +21,7 @@ public class Kendaraan {
     }
 
     //selektor
-    public String getnoPlat() {
+    public String getNoPlat() {
         return noPlat;
     }
 
@@ -30,7 +30,7 @@ public class Kendaraan {
     }
 
     //mutator
-    public void setnoPlat(String noPlat) {
+    public void setNoPlat(String noPlat) {
         this.noPlat = noPlat;
     }
 
