@@ -1,3 +1,8 @@
+/* Nama File    : MMahasiswa.java
+ * Deskripsi    : pengaplikasian dari relasi antara class Mahasiswa, MataKuliah, Kendaraan, dan Dosen
+ * Pembuat      : Shafa Aqilla Zahira 24060124140146
+ * Tanggal      : 8 Februari 2026 */
+
 public class MMahasiswa {
     public static void main(String[] args) {
         MataKuliah PBO = new MataKuliah("PBO", "Pemrograman Berorientasi Objek", 3);

@@ -1,3 +1,8 @@
+/* Nama File    : Mahasiswa.java
+ * Deskripsi    : berisi atribut dan method dalam class Mahasiswa
+ * Pembuat      : Shafa Aqilla Zahira 24060124140146
+ * Tanggal      : 7 Februari 2026 */
+
 import java.util.ArrayList;
 
 public class Mahasiswa {
@@ -10,6 +15,7 @@ public class Mahasiswa {
     private Kendaraan kendaraan;
 
     /* *******************METHOD******************* */
+    //konstruktor
     public Mahasiswa() {
         this.nim = "###";
         this.nama = "###";
@@ -24,6 +30,7 @@ public class Mahasiswa {
         this.listMatkul = new ArrayList<>();
     }
 
+    //selektor
     public String getNim() {
         return nim;
     }
@@ -44,6 +51,7 @@ public class Mahasiswa {
         return kendaraan;
     }
 
+    //mutator
     public void setNim(String nim) {
         this.nim = nim;
     }
@@ -64,6 +72,7 @@ public class Mahasiswa {
         this.kendaraan = kendaraan;
     }
 
+    //method lain
     public void addMatkul(MataKuliah newMatkul) {
         listMatkul.add(newMatkul);
     }

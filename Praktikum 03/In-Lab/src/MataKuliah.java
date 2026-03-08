@@ -1,3 +1,8 @@
+/* Nama File    : MataKuliah.java
+ * Deskripsi    : berisi atribut dan method dalam class MataKuliah
+ * Pembuat      : Shafa Aqilla Zahira 24060124140146
+ * Tanggal      : 7 Februari 2026 */
+
 public class MataKuliah {
     /* *******************ATRIBUT******************* */
     private String idMatkul;
@@ -5,10 +10,10 @@ public class MataKuliah {
     private int sks;
     
     /* *******************METHOD******************* */
-    // konstruktor
+    //konstruktor
     public MataKuliah() {
-        idMatkul = "####";
-        nama = "####";
+        idMatkul = "###";
+        nama = "###";
         sks = 0;
     }
 
