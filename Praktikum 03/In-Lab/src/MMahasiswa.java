@@ -17,6 +17,7 @@ public class MMahasiswa {
 
         M1.setDosenWali(D1);
         M2.setDosenWali(D2);
+        
         M1.addMatkul(PBO);
         M1.addMatkul(MBD);
         M2.addMatkul(IMK);
