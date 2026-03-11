@@ -57,9 +57,4 @@ public class Persegi extends BangunDatar{
     //     super.printInfo();
     //     System.out.println("Sisi: " + sisi);
     // }
-
-    public static void printCounterBangunDatar(){
-        System.out.println("Jumlah Persegi: ");
-        BangunDatar.printCounterBangunDatar();
-    }
 }

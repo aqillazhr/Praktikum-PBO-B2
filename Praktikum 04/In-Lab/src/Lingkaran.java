@@ -13,19 +13,24 @@ public class Lingkaran extends BangunDatar {
         this.jari = 1;
     }
 
-    public Lingkaran(double jariJari, String warna, String border) {
+    public Lingkaran(double diameter, String warna, String border) {
         this.setJmlSisi(1);
         this.setWarna(warna);
         this.setBorder(border);
-        this.jari = jariJari;
+        this.jari = diameter / 2.0;
     }
+
+    // public Lingkaran(double diameter, String warna, String border) {
+    //     super(1, warna, border);
+    //     this.jari = diameter / 2.0;
+    // }
 
     public double getJari() {
         return jari;
     }
 
-    public void setJari(double jariJari) {
-        this.jari = jariJari;
+    public void setJari(double jari) {
+        this.jari = jari;
     }
 
     public double getLuas() {
@@ -35,4 +40,18 @@ public class Lingkaran extends BangunDatar {
     public double getKeliling() {
         return 2 * Math.PI * this.jari;
     }
+
+    @Override
+    public void printInfo(){
+        System.out.println("Jumlah sisi: " + getJmlSisi());
+        System.out.println("Warna: " + getWarna());
+        System.out.println("Border: " + getBorder());
+        System.out.println("Jari-jari: " + jari);
+    }
+
+    // @Override
+    // public void printInfo(){
+    //     super.printInfo();
+    //     System.out.println("Jari-jari: " + jari);
+    // }
 }
