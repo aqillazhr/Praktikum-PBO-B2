@@ -32,15 +32,15 @@ public class Persegi extends BangunDatar{
         this.sisi = sisi;
     }
 
-    public double getLuas(double sisi) {
+    public double getLuas() {
         return sisi * sisi;
     }
 
-    public double getKeliling(double sisi) {
+    public double getKeliling() {
         return 4 * sisi;
     }
 
-    public double getDiagonal(double sisi) {
+    public double getDiagonal() {
         return sisi * Math.sqrt(2);
     }
 
