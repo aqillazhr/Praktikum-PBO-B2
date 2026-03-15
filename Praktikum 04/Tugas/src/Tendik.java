@@ -1,5 +1,5 @@
 /* Nama File    : Tendik.java
- * Deskripsi    : berisi pengaplikasian dari class Tendik
+ * Deskripsi    : berisi atribut dan method dari class Tendik
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
  * Tanggal      : 15 Maret 2026 */
 

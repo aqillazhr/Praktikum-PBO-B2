@@ -1,5 +1,5 @@
 /* Nama File    : DosenTetap.java
- * Deskripsi    : berisi pengaplikasian dari class DosenTetap
+ * Deskripsi    : berisi atribut dan method dari class DosenTetap
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
  * Tanggal      : 15 Maret 2026 */
 
