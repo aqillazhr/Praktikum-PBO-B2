@@ -39,12 +39,12 @@ public class Tendik extends Pegawai{
     }
 
     //method lain
-    private double getTunjangan() {
+    public double getTunjangan() {
         Period periodeKerja = Period.between(getTmt(), LocalDate.now());
         return 0.01 * periodeKerja.getYears() * getGajiPokok();
     }
 
-    private LocalDate getTanggalPensiun() {
+    public LocalDate getTanggalPensiun() {
         return getTanggalLahir().plusYears(BUP).withDayOfMonth(1).plusMonths(1);
     }
 

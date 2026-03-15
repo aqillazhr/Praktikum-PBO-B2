@@ -59,5 +59,4 @@ public class DosenTamu extends Dosen {
         System.out.println("Tunjangan: Rp" + String.format("%,.2f", getTunjangan()));
 
     }
-
 }

@@ -39,12 +39,12 @@ public class DosenTetap extends Dosen {
     }
 
     //method lain
-    private double getTunjangan() {
+    public double getTunjangan() {
         Period masaKerja = Period.between(getTmt(), LocalDate.now());
         return 0.02 * masaKerja.getYears() * getGajiPokok();
     }
 
-    private LocalDate getTanggalPensiun() {
+    public LocalDate getTanggalPensiun() {
         return getTanggalLahir().plusYears(BUP).withDayOfMonth(1).plusMonths(1);
     }
 
