@@ -9,7 +9,7 @@ import java.util.Locale;
 
 public class Tendik extends Pegawai{
     /* *******************ATRIBUT******************* */
-    private int BUP = 55;
+    private static final int BUP = 55;
     private String bidang;
 
     /* *******************METHOD******************* */

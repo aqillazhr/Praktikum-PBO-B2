@@ -53,7 +53,7 @@ public class DosenTamu extends Dosen {
     public void printInfo() {
         super.printInfo();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d MMMM yyyy", new Locale("id", "ID"));
-        System.out.println("NIDN: " + NIDK);
+        System.out.println("NIDK: " + NIDK);
         System.out.println("Jabatan: Dosen Tamu");
         System.out.println("Tanggal Berakhir Kontrak: " + getBerakhirKontrak().format(formatter));
         System.out.println("Tunjangan: Rp" + String.format("%,.2f", getTunjangan()));

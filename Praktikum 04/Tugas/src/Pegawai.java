@@ -55,7 +55,7 @@ public class Pegawai {
     }
 
     //mutator
-    public void setNip (String NIP) {
+    public void setNip(String NIP) {
         this.NIP = NIP;
     }
 

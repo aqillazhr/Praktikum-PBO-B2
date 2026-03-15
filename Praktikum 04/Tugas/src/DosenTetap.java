@@ -10,7 +10,7 @@ import java.util.Locale;
 public class DosenTetap extends Dosen {
     /* *******************ATRIBUT******************* */
     private String NIDN;
-    private int BUP = 65;
+    private static final int BUP = 65;
 
     /* *******************METHOD******************* */
     //konstruktor
