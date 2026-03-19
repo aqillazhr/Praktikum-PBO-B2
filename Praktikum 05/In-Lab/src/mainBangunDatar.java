@@ -1,4 +1,4 @@
-/* Nama File    : MBangunDatar.java
+/* Nama File    : mainBangunDatar.java
  * Deskripsi    : berisi pengaplikasian dari method class BangunDatar, Lingkaran, Persegi, dan juga Interface IResize
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
  * Tanggal      : 18 Maret 2026 */
