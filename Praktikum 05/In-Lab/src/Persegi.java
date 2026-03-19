@@ -13,17 +13,17 @@ public class Persegi extends BangunDatar implements IResize{
         setJmlSisi(4);
     }
 
-    public Persegi(double sisi, String warna, String border) {
-        this.sisi = sisi;
-        setWarna(warna);
-        setBorder(border);
-        setJmlSisi(4);
-    }
-
     // public Persegi(double sisi, String warna, String border) {
-    //     super(4, warna, border);
     //     this.sisi = sisi;
+    //     setWarna(warna);
+    //     setBorder(border);
+    //     setJmlSisi(4);
     // }
+
+    public Persegi(double sisi, String warna, String border) {
+        super(4, warna, border);
+        this.sisi = sisi;
+    }
 
     //selektor
     public double getSisi() {
@@ -36,10 +36,12 @@ public class Persegi extends BangunDatar implements IResize{
     }
 
     //method lain
+    @Override
     public double getLuas() {
         return sisi * sisi;
     }
 
+    @Override
     public double getKeliling() {
         return 4 * sisi;
     }
@@ -48,19 +50,19 @@ public class Persegi extends BangunDatar implements IResize{
         return sisi * Math.sqrt(2);
     }
 
-    @Override
-    public void printInfo() {
-        System.out.println("Jumlah sisi: " + getJmlSisi());
-        System.out.println("Warna: " + getWarna());
-        System.out.println("Border: " + getBorder());
-        System.out.println("Sisi: " + sisi);
-    }
-
     // @Override
     // public void printInfo() {
-    //     super.printInfo();
+    //     System.out.println("Jumlah sisi: " + getJmlSisi());
+    //     System.out.println("Warna: " + getWarna());
+    //     System.out.println("Border: " + getBorder());
     //     System.out.println("Sisi: " + sisi);
     // }
+
+    @Override
+    public void printInfo() {
+        super.printInfo();
+        System.out.println("Sisi: " + sisi);
+    }
 
     @Override
     public void zoomIn() {
@@ -72,7 +74,8 @@ public class Persegi extends BangunDatar implements IResize{
         sisi = sisi * 0.9;
     }
 
+    @Override
     public void zoom(int percent) {
-        sisi = sisi * percent / 100;
+        sisi = sisi * percent / 100.0;
     }
 }

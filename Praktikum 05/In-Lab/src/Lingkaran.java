@@ -14,17 +14,17 @@ public class Lingkaran extends BangunDatar implements IResize{
         this.jari = 1;
     }
 
-    public Lingkaran(double diameter, String warna, String border) {
-        this.setJmlSisi(1);
-        this.setWarna(warna);
-        this.setBorder(border);
-        this.jari = diameter / 2.0;
-    }
-
     // public Lingkaran(double diameter, String warna, String border) {
-    //     super(1, warna, border);
+    //     this.setJmlSisi(1);
+    //     this.setWarna(warna);
+    //     this.setBorder(border);
     //     this.jari = diameter / 2.0;
     // }
+
+    public Lingkaran(double diameter, String warna, String border) {
+        super(1, warna, border);
+        this.jari = diameter / 2.0;
+    }
 
     //selektor
     public double getJari() {
@@ -37,27 +37,29 @@ public class Lingkaran extends BangunDatar implements IResize{
     }
 
     //method lain
+    @Override
     public double getLuas() {
         return Math.PI * this.jari * this.jari;
     }
     
+    @Override
     public double getKeliling() {
         return 2 * Math.PI * this.jari;
     }
 
-    @Override
-    public void printInfo(){
-        System.out.println("Jumlah sisi: " + getJmlSisi());
-        System.out.println("Warna: " + getWarna());
-        System.out.println("Border: " + getBorder());
-        System.out.println("Jari-jari: " + jari);
-    }
-
     // @Override
     // public void printInfo(){
-    //     super.printInfo();
+    //     System.out.println("Jumlah sisi: " + getJmlSisi());
+    //     System.out.println("Warna: " + getWarna());
+    //     System.out.println("Border: " + getBorder());
     //     System.out.println("Jari-jari: " + jari);
     // }
+
+    @Override
+    public void printInfo(){
+        super.printInfo();
+        System.out.println("Jari-jari: " + jari);
+    }
 
     @Override
     public void zoomIn() {
@@ -69,7 +71,8 @@ public class Lingkaran extends BangunDatar implements IResize{
         jari = jari * 0.9;
     }
 
+    @Override
     public void zoom(int percent) {
-        jari = jari * percent / 100;
+        jari = jari * percent / 100.0;
     }
 }

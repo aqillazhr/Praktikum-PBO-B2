@@ -50,15 +50,15 @@ public abstract class BangunDatar {
     }
 
     //method lain
-    public abstract double getLuas();
-
-    public abstract double getKeliling();
-
     public void printInfo() {
         System.out.println("Jumlah sisi: " + jmlSisi);
         System.out.println("Warna: " + warna);
         System.out.println("Border: " + border);
     }
+
+    public abstract double getLuas();
+
+    public abstract double getKeliling();
 
     public static void printCounterBangunDatar() {
         System.out.println("Jumlah Objek Bangun Datar: " + counterBangunDatar);

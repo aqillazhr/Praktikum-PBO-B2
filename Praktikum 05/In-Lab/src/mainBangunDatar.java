@@ -1,11 +1,11 @@
-/* Nama File    : mainBangunDatar.java
+/* Nama File    : MainBangunDatar.java
  * Deskripsi    : berisi pengaplikasian dari method class BangunDatar, Lingkaran, Persegi, dan juga Interface IResize
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
  * Tanggal      : 18 Maret 2026 */
 
-public class mainBangunDatar {
+public class MainBangunDatar {
     public static void main(String[] args) {
-        // BangunDatar B1 = new BangunDatar(); --> ini tidak bisa (error) karena bangun datar adalah abstract, jadi gabsia diinstansiasi
+        // BangunDatar B1 = new BangunDatar(); --> ini tidak bisa (error) karena bangun datar adalah abstract, jadi gabisa diinstansiasi
         BangunDatar P1 = new Persegi(10.0, "Pink", "Navy");
         Persegi P2 = new Persegi(5.0, "hijau lumut", "biru elektrik");
         BangunDatar L1 = new Lingkaran(7.0, "sky blue", "coklat mahogany");
@@ -56,10 +56,10 @@ public class mainBangunDatar {
 
         //penerapan Interface IResize
         System.out.println("-----zoomIn-----");
-        System.out.println("Jari-jari L1: " + L2.getJari());
+        System.out.println("Jari-jari L2: " + L2.getJari());
         L2.zoomIn();
         System.out.println("Setelah zoomIn ");
-        System.out.println("Jari-jari L1: " + L2.getJari());
+        System.out.println("Jari-jari L2: " + L2.getJari());
 
         System.out.println("-----zoomOut-----");
         System.out.println("Sisi P2: " + P2.getSisi());
