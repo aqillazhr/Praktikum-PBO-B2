@@ -14,13 +14,13 @@ public class Petani extends Manusia implements Pajak {
 
     /* *******************METHOD******************* */
     //konstruktor
-    Petani() {
+    public Petani() {
         super();
         this.asal_kota = "-";
         counterPetani++;
     }
 
-    Petani(String nama, LocalDate tgl_mulai_kerja, String alamat, double pendapatan, String asal_kota) {
+    public Petani(String nama, LocalDate tgl_mulai_kerja, String alamat, double pendapatan, String asal_kota) {
         super(nama, tgl_mulai_kerja, alamat, pendapatan);
         this.asal_kota = asal_kota;
         counterPetani++;
