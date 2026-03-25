@@ -3,7 +3,7 @@
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
  * Tanggal      : 18 Maret 2026 */
 
-public class MainBangunDatar {
+public class mainBangunDatar {
     public static void main(String[] args) {
         // BangunDatar B1 = new BangunDatar(); --> ini tidak bisa (error) karena bangun datar adalah abstract, jadi gabisa diinstansiasi
         BangunDatar P1 = new Persegi(10.0, "Pink", "Navy");
