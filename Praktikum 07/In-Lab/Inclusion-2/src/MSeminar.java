@@ -27,7 +27,7 @@ public class MSeminar {
         System.out.println("Jumlah peserta seminar: " + S1.countPeserta());
         System.out.println();
 
-        System.out.println("----- DAFTAR PESERTA SEMINAR -----");
+        System.out.println("-----DAFTAR PESERTA SEMINAR-----");
         S1.tampilPeserta();
 
         System.out.println();
