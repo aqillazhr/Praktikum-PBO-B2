@@ -4,13 +4,11 @@
  * Tanggal      : 25 April 2026 */
 
 public class Mahasiswa {
-    //Kamus
     /* *******************ATRIBUT******************* */
     String NIM;
     String Nama;
     String ProgramStudi;
 
-    //Algoritma
     /* *******************METHOD******************* */
     //konstruktor
     public Mahasiswa() {
@@ -57,7 +55,6 @@ public class Mahasiswa {
         this.ProgramStudi = mhs.ProgramStudi;
     }
 
-    //Pengaplikasian
     /* *******************APLIKASI******************* */
     public static void main(String[] args) {
         Mahasiswa M1 = new Mahasiswa();
