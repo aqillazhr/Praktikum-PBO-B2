@@ -3,17 +3,17 @@
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
  * Tanggal      : 25 April 2026 */
 
-public abstract class CivitasAkademika {
+public abstract class Civitasakademika {
     /* *******************ATRIBUT******************* */
     protected String Nama;
 
     /* *******************METHOD******************* */
     //konstruktor
-    public CivitasAkademika() {
+    public Civitasakademika() {
         this.Nama = "";
     }
-    public CivitasAkademika(String nama) {
-        this.Nama = nama;
+    public Civitasakademika(String Nama) {
+        this.Nama = Nama;
     }
 
     //selektor
@@ -22,9 +22,4 @@ public abstract class CivitasAkademika {
     }
 
     public abstract String getNomor();
-
-    //mutator
-    public void setNama(String Nama) {
-        this.Nama = Nama;
-    }
 }

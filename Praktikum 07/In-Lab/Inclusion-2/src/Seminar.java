@@ -4,18 +4,20 @@
  * Tanggal      : 25 April 2026 */
 
 public class Seminar {
-    private CivitasAkademika[] pesertas;
-    private int banyakPeserta;
+    /* *******************ATRIBUT******************* */
+    private Civitasakademika[] pesertas;
+    private int banyakpeserta;
     
+    /* *******************METHOD******************* */
     public Seminar() {
-        pesertas = new CivitasAkademika[100];
-        banyakPeserta = 0;
+        pesertas = new Civitasakademika[100];
+        banyakpeserta = 0;
     }
 
-    public void registrasi(CivitasAkademika c) {
-        if (banyakPeserta < 100) {
-            pesertas[banyakPeserta] = c;
-            banyakPeserta++;
+    public void registrasi(Civitasakademika c) {
+        if (banyakpeserta < 100) {
+            pesertas[banyakpeserta] = c;
+            banyakpeserta++;
         }
         else {
             System.out.println("Peserta penuh");
@@ -23,7 +25,7 @@ public class Seminar {
     }
 
     public int countPeserta() {
-        return banyakPeserta;
+        return banyakpeserta;
     }
 
     public void tampilPeserta() {
@@ -31,7 +33,7 @@ public class Seminar {
         int i;
         //algoritma
         System.out.println("Daftar Peserta");
-        for (i = 0; i < banyakPeserta; i++) {
+        for (i = 0; i < banyakpeserta; i++) {
             System.out.println(
                 pesertas[i].getNomor() + " - " + pesertas[i].getNama()
             );
@@ -43,7 +45,7 @@ public class Seminar {
         int count, i;
         //algoritma
         count = 0;
-        for (i = 0; i < banyakPeserta; i++) {
+        for (i = 0; i < banyakpeserta; i++) {
             if (pesertas[i] instanceof Mahasiswa) {
                 count++;
             }

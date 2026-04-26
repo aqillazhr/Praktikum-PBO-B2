@@ -3,7 +3,7 @@
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
  * Tanggal      : 25 April 2026 */
 
-public class Dosen extends CivitasAkademika {
+public class Dosen extends Civitasakademika {
     /* *******************ATRIBUT******************* */
     protected String NIP;
 
@@ -23,10 +23,5 @@ public class Dosen extends CivitasAkademika {
     @Override
     public String getNomor() {
         return this.NIP;
-    }
-
-    //mutator
-    public void setNomor( String NIP) {
-        this.NIP = NIP;
     }
 }
