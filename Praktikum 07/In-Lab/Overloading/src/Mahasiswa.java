@@ -43,7 +43,7 @@ public class Mahasiswa {
     }
 
     //mutator
-    public void setProgramStudi () {
+    public void setProgramstudi () {
         this.Programstudi = "Kosong";
     }
 
@@ -51,7 +51,7 @@ public class Mahasiswa {
         this.Programstudi = Programstudi;
     }
 
-    public void setProgramStudi(Mahasiswa mhs) {
+    public void setProgramstudi(Mahasiswa mhs) {
         this.Programstudi = mhs.Programstudi;
     }
 
@@ -79,11 +79,11 @@ public class Mahasiswa {
         System.out.println("Program Studi: " + M3.getProgramstudi());
         System.out.println();
 
-        M1.setProgramStudi();
+        M1.setProgramstudi();
         M2.setProgramstudi("Teknik Elektro");
-        M3.setProgramStudi(M2);
+        M3.setProgramstudi(M2);
 
-        System.out.println("-----setelah setProgramStudi-----");
+        System.out.println("-----setelah setProgramstudi-----");
         System.out.println("Program Studi M1: " + M1.getProgramstudi());
         System.out.println("Program Studi M2: " + M2.getProgramstudi());
         System.out.println("Program Studi M3: " + M3.getProgramstudi());
