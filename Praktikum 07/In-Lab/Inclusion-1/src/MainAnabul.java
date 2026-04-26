@@ -1,4 +1,4 @@
-/* Nama File    : Anjing.java
+/* Nama File    : MainAnabul.java
  * Deskripsi    : Penerapan polimorfisme inclusion pada Java
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
  * Tanggal      : 25 April 2026 */
