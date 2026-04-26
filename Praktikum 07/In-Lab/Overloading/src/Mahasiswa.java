@@ -7,26 +7,26 @@ public class Mahasiswa {
     /* *******************ATRIBUT******************* */
     String NIM;
     String Nama;
-    String ProgramStudi;
+    String Programstudi;
 
     /* *******************METHOD******************* */
     //konstruktor
     public Mahasiswa() {
         this.NIM = "-999";
         this.Nama = "n/a";
-        this.ProgramStudi = "n/a";
+        this.Programstudi = "n/a";
     }
 
-    public Mahasiswa(String nim, String nama, String programStudi) {
-        this.NIM = nim;
-        this.Nama = nama;
-        this.ProgramStudi = programStudi;
+    public Mahasiswa(String NIM, String Nama, String Programstudi) {
+        this.NIM = NIM;
+        this.Nama = Nama;
+        this.Programstudi = Programstudi;
     }
 
     public Mahasiswa(Mahasiswa mahasiswa) {
         this.NIM = mahasiswa.NIM;
         this.Nama = mahasiswa.Nama;
-        this.ProgramStudi = mahasiswa.ProgramStudi;
+        this.Programstudi = mahasiswa.Programstudi;
     }
 
     //selektor
@@ -38,21 +38,21 @@ public class Mahasiswa {
         return this.Nama;
     }
 
-    public String getProgramStudi() {
-        return this.ProgramStudi;
+    public String getProgramstudi() {
+        return this.Programstudi;
     }
 
     //mutator
     public void setProgramStudi () {
-        this.ProgramStudi = "Kosong";
+        this.Programstudi = "Kosong";
     }
 
-    public void setProgramStudi(String P) {
-        this.ProgramStudi = P;
+    public void setProgramstudi(String Programstudi) {
+        this.Programstudi = Programstudi;
     }
 
     public void setProgramStudi(Mahasiswa mhs) {
-        this.ProgramStudi = mhs.ProgramStudi;
+        this.Programstudi = mhs.Programstudi;
     }
 
     /* *******************APLIKASI******************* */
@@ -64,28 +64,28 @@ public class Mahasiswa {
         System.out.println("-----Mahasiswa 1-----");
         System.out.println("NIM: " + M1.getNIM());
         System.out.println("Nama: " + M1.getNama());
-        System.out.println("Program Studi: " + M1.getProgramStudi());
+        System.out.println("Program Studi: " + M1.getProgramstudi());
         System.out.println();
 
         System.out.println("-----Mahasiswa 2-----");
         System.out.println("NIM: " + M2.getNIM());
         System.out.println("Nama: " + M2.getNama());
-        System.out.println("Program Studi: " + M2.getProgramStudi());
+        System.out.println("Program Studi: " + M2.getProgramstudi());
         System.out.println();
 
         System.out.println("-----Mahasiswa 3-----");
         System.out.println("NIM: " + M3.getNIM());
         System.out.println("Nama: " + M3.getNama());
-        System.out.println("Program Studi: " + M3.getProgramStudi());
+        System.out.println("Program Studi: " + M3.getProgramstudi());
         System.out.println();
 
         M1.setProgramStudi();
-        M2.setProgramStudi("Teknik Elektro");
+        M2.setProgramstudi("Teknik Elektro");
         M3.setProgramStudi(M2);
 
         System.out.println("-----setelah setProgramStudi-----");
-        System.out.println("Program Studi M1: " + M1.getProgramStudi());
-        System.out.println("Program Studi M2: " + M2.getProgramStudi());
-        System.out.println("Program Studi M3: " + M3.getProgramStudi());
+        System.out.println("Program Studi M1: " + M1.getProgramstudi());
+        System.out.println("Program Studi M2: " + M2.getProgramstudi());
+        System.out.println("Program Studi M3: " + M3.getProgramstudi());
     }
 }
