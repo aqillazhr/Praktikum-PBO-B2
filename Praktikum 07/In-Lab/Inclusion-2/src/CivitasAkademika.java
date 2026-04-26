@@ -10,7 +10,7 @@ public abstract class CivitasAkademika {
     /* *******************METHOD******************* */
     //konstruktor
     public CivitasAkademika() {
-        this.Nama = "-";
+        this.Nama = "";
     }
     public CivitasAkademika(String nama) {
         this.Nama = nama;

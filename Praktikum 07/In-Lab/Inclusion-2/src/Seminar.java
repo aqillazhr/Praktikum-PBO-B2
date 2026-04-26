@@ -18,7 +18,7 @@ public class Seminar {
             banyakPeserta++;
         }
         else {
-            System.out.println("Peserta penuh!");
+            System.out.println("Peserta penuh");
         }
     }
 

@@ -5,12 +5,12 @@
 
 public class Dosen extends CivitasAkademika {
     /* *******************ATRIBUT******************* */
-    private String NIP;
+    protected String NIP;
 
     /* *******************METHOD******************* */
     //konstruktor
     public Dosen() {
-        super("");
+        super();
         this.NIP = "";
     }
 

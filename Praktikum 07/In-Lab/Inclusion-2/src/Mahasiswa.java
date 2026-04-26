@@ -1,17 +1,17 @@
-/* Nama File    : Dosen.java
+/* Nama File    : Mahasiswa.java
  * Deskripsi    : Penerapan polimorfisme inclusion pada Java
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
  * Tanggal      : 25 April 2026 */
 
 public class Mahasiswa extends CivitasAkademika{
     /* *******************ATRIBUT******************* */
-    private String NIM;
-    private Dosen DosenWali;
+    protected String NIM;
+    protected Dosen DosenWali;
 
     /* *******************METHOD******************* */
     //konstruktor
     public Mahasiswa() {
-        super("");
+        super();
         this.NIM = "";
         this.DosenWali = new Dosen("", "");
     }
