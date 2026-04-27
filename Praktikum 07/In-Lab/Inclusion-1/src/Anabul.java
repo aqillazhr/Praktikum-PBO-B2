@@ -5,11 +5,19 @@
 
 public abstract class Anabul {
     /* *******************ATRIBUT******************* */
-    protected String Nama;
+    private String Nama;
 
     /* *******************METHOD******************* */
+    public Anabul() {
+        this.Nama ="";
+    }
+    
     public Anabul(String Nama) {
         this.Nama = Nama;
+    }
+
+    public String getNama() {
+        return this.Nama;
     }
 
     public abstract void Gerak();

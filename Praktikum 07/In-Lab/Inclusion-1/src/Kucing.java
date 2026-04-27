@@ -7,17 +7,21 @@ public class Kucing extends Anabul {
     /* *******************ATRIBUT******************* */
 
     /* *******************METHOD******************* */
+    public Kucing() {
+        super();
+    }
+    
     public Kucing(String Nama) {
         super(Nama);
     }
 
     @Override
     public void Gerak() {
-        System.out.println(Nama + " bergerak melata");
+        System.out.println(getNama() + " bergerak melata");
     }
 
     @Override
     public void Bersuara() {
-        System.out.println(Nama + " berbunyi meong");
+        System.out.println(getNama() + " berbunyi meong");
     }
 }

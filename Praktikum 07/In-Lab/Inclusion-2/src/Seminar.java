@@ -1,4 +1,4 @@
-/* Nama File    : CivitasAkademika.java
+/* Nama File    : Seminar.java
  * Deskripsi    : Penerapan polimorfisme inclusion pada Java
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
  * Tanggal      : 25 April 2026 */
