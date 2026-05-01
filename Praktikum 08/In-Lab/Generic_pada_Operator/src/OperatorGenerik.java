@@ -40,26 +40,26 @@ public class OperatorGenerik {
         System.out.println();
 
         System.out.println("Sebelum Tukar");
-        C.getIsi().Gerak();
-        C.getIsi().Bersuara();
-        D.getIsi().Gerak();
-        D.getIsi().Bersuara();
+        C.isi.Gerak();
+        C.isi.Bersuara();
+        D.isi.Gerak();
+        D.isi.Bersuara();
         System.out.println();
 
         System.out.println("Setelah Tukar");
         OperatorGenerik.Tukar(C, D);
-        C.getIsi().Gerak();
-        C.getIsi().Bersuara();
-        D.getIsi().Gerak();
-        D.getIsi().Bersuara();
+        C.isi.Gerak();
+        C.isi.Bersuara();
+        D.isi.Gerak();
+        D.isi.Bersuara();
         System.out.println();
 
         System.out.println("-----Penerapan fungsi Bobot2-----");
-        Anggora A1 = new Anggora("Gorun", 2.5);
+        Anggora A1 = new Anggora("Gorun", 20.5);
         System.out.println("Nama kucing 1: " + A1.getNama());
         System.out.println("Bobot kucing 1: " + A1.getBobot());
 
-        Kembangtelon K1 = new Kembangtelon("Cuwwi", 3.0);
+        Kembangtelon K1 = new Kembangtelon("Cuwwi", 30.0);
         System.out.println("Nama kucing 2: " + K1.getNama());
         System.out.println("Bobot kucing 2: " + K1.getBobot());
         
