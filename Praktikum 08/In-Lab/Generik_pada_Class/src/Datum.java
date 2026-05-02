@@ -27,7 +27,7 @@ public class Datum <G> {
         this.isi = isibaru;
     }
 
-    //Main program
+    /* *******************MAIN PROGRAM******************* */
     public static void main(String[] args) {
         //Kamus
         Kucing cat;

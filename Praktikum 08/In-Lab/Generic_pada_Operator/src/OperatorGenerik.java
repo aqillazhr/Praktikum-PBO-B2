@@ -17,7 +17,7 @@ public class OperatorGenerik {
         return a.getBobot() + b.getBobot();
     }
 
-    //Main program
+    /* *******************MAIN PROGRAM******************* */
     public static void main(String[] args) {
         //Kamus
         double totalBobot;
