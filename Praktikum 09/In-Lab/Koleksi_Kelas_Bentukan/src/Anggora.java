@@ -12,7 +12,7 @@ public class Anggora extends Kucing {
         super();
     }
 
-    public Anggora(String nama, double bobot) {
-        super(nama, bobot);
+    public Anggora(String nama, String panggilan, double bobot) {
+        super(nama, panggilan, bobot);
     }
 }

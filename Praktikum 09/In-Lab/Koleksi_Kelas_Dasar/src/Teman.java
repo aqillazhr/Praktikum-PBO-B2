@@ -5,7 +5,7 @@
 
 import java.util.*;
 
-public class Teman <T> {
+public class Teman {
     /* ******************* ATRIBUT ******************* */
     private int nbelm;
     private List<String> Lnama;
@@ -15,6 +15,11 @@ public class Teman <T> {
     public Teman() {
         this.nbelm = 0;
         this.Lnama = new ArrayList<>();
+    }
+
+    public Teman(List<String> Lnama) {
+        this.Lnama = Lnama;
+        this.nbelm = Lnama.size();
     }
 
     //Selektor
@@ -70,12 +75,6 @@ public class Teman <T> {
     }
 
     // public void showTeman() {
-    //     for (String nama : Lnama) {
-    //         System.out.println(nama);
-    //     }
-    // }
-
-    // public void showTeman() {
     //     //kamus
     //     int i;
     //     //algoritma
@@ -84,24 +83,9 @@ public class Teman <T> {
     //     }
     // }
 
-    // public void showTeman() {
-    //     for (String nama : Lnama) {
-    //         System.out.println(nama);
-    //     }
-    // }
-
     public void showTeman() {
-        //kamus
-        int i;
-        //algoritma
-        for (i = 0; i < Lnama.size(); i++) {
-            System.out.println(Lnama.get(i));
+        for (String nama : Lnama) {
+            System.out.println(nama);
         }
     }
-
-    // public void showTeman() {
-    //     for (String nama : Lnama) {
-    //         System.out.println(nama);
-    //     }
-    // }
 }

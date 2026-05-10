@@ -18,12 +18,17 @@ public class Piaraan {
         nbelm = 0;
     }
 
+    public Piaraan(Queue <Anabul> Lanabul) {
+        this.Lanabul = Lanabul;
+        this.nbelm = Lanabul.size();
+    }
+
     //Selektor
     public int getNbelm() {
         return nbelm;
     }
 
-    //Mutator
+    //Method lain
     public void enqueueAnabul(Anabul a) {
         Lanabul.add(a);
         nbelm++;
@@ -50,4 +55,41 @@ public class Piaraan {
             System.out.println(a.getNama());
         }
     }
+
+    public int countKucing() {
+        // Kamus
+        int count;
+        // Algoritma
+        count = 0;
+        for (Anabul a : Lanabul) {
+            if (a instanceof Kucing) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public double bobotKucing() {
+        // Kamus
+        double total;
+        // Algoritma
+        total = 0;
+        for (Anabul a : Lanabul) {
+            if (a instanceof Kucing) {
+                total += ((Kucing) a).getBobot();
+            }
+        }
+        return total;
+    }
+
+    public void showJenisAnabul() {
+        for (Anabul a : Lanabul) {
+            System.out.println(
+                a.getNama() + " adalah " +
+                a.getClass().getName()
+            );
+        }
+    }
+
+    
 }

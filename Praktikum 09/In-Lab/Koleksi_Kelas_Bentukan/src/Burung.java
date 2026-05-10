@@ -12,8 +12,8 @@ public class Burung extends Anabul {
         super();
     }
     
-    public Burung(String Nama) {
-        super(Nama);
+    public Burung(String nama, String panggilan) {
+        super(nama, panggilan);
     }
 
     //Method lain

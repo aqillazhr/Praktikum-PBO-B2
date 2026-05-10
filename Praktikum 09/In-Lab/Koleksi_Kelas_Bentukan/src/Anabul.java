@@ -1,30 +1,41 @@
 /* Nama File    : Anabul.java
  * Deskripsi    : Penerapan generik di bahasa Java
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
- * Tanggal      : 29 April 2026 */
+ * Tanggal      : 6 Mei 2026 */
 
 public abstract class Anabul {
     /* *******************ATRIBUT******************* */
-    private String Nama;
+    private String nama;
+    private String panggilan;
 
     /* *******************METHOD******************* */
     //Konstruktor
     public Anabul() {
-        this.Nama ="";
+        this.nama ="";
+        this.panggilan = "";
     }
     
-    public Anabul(String Nama) {
-        this.Nama = Nama;
+    public Anabul(String nama, String panggilan) {
+        this.nama = nama;
+        this.panggilan = panggilan;
     }
 
     //selektor
     public String getNama() {
-        return this.Nama;
+        return this.nama;
+    }
+
+    public String getPanggilan() {
+        return this.panggilan;
     }
 
     //Mutator
-    public void setNama(String Nama) {
-        this.Nama = Nama;
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public void setPanggilan(String panggilan) {
+        this.panggilan = panggilan;
     }
 
     //method lain

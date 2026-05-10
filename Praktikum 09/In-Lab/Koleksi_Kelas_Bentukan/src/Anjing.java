@@ -12,8 +12,8 @@ public class Anjing extends Anabul{
         super();
     }
     
-    public Anjing(String Nama) {
-        super(Nama);
+    public Anjing(String nama, String panggilan) {
+        super(nama, panggilan);
     }
 
     //Method lain

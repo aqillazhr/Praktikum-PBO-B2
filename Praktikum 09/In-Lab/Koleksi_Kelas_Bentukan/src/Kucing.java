@@ -1,7 +1,7 @@
 /* Nama File    : Kucing.java
  * Deskripsi    : Penerapan generik di bahasa Java
  * Pembuat      : Shafa Aqilla Zahira 24060124140146
- * Tanggal      : 29 April 2026 */
+ * Tanggal      : 6 Mei 2026 */
 
 public class Kucing extends Anabul {
     /* *******************ATRIBUT******************* */
@@ -13,8 +13,8 @@ public class Kucing extends Anabul {
         this.bobot = 0.0;
     }
     
-    public Kucing(String Nama, double bobot) {
-        super(Nama);
+    public Kucing(String nama, String panggilan, double bobot) {
+        super(nama, panggilan);
         this.bobot = bobot;
     }
 

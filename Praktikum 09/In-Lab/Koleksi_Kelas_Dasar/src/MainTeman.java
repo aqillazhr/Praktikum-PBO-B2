@@ -5,13 +5,13 @@
 
 public class MainTeman {
     public static void main(String[] args) {
-        //kamus
-        Teman <String> Teman1;
-        // Teman Teman1; --> klo gada tupple (kek di kelas)
-        //Shafa, Aqilla, Zahira, Riva, Shafa
-        //algoritma
-        // Teman1 = new Teman(); --> klo gada tupple (kek di kelas)
-        Teman1 = new Teman<>();
+        // Kamus
+        Teman Teman1;
+        // Teman Teman1; --> seperti contoh pengaplikasian di kelas dan di lab (berlaku juga di class Teman)
+        // Teman <String> Teman1; --> seperti contoh ppt di kelas dan di lab (berlaku juga di class Teman)
+
+        // Algoritma
+        Teman1 = new Teman();
         Teman1.addNama("Shafa");
         Teman1.addNama("Aqilla");
         Teman1.addNama("Zahira");
@@ -27,18 +27,16 @@ public class MainTeman {
         System.out.println("Jumlah teman: " + Teman1.getNbelm());
         System.out.println();
 
-        System.out.println("-----setNama()-----");
         Teman1.setNama(1, "Upim");
-        System.out.println("setelah setNama()");
+        System.out.println("setelah setNama Upim di indeks ke 1");
         Teman1.showTeman();
         System.out.println();
         System.out.println("Apakah Riva adalah teman?");
         System.out.println(Teman1.isMember("Riva"));
         System.out.println();
 
-        System.out.println("-----gantiNama()-----");
         Teman1.gantiNama("Riva", "Boboiboy");
-        System.out.println("Setelah gantiNama()");
+        System.out.println("Setelah gantiNama Riva menjadi Boboiboy");
         Teman1.showTeman();
         System.out.println();
 
@@ -46,9 +44,8 @@ public class MainTeman {
         System.out.println(Teman1.countNama("Shafa"));
         System.out.println();
 
-        System.out.println("-----delNama()-----");
         Teman1.delNama("Upim");
-        System.out.println("Setelah delNama()");
+        System.out.println("Setelah delNama Upim");
         Teman1.showTeman();
         System.out.println();
         System.out.println("Jumlah teman sekarang: " + Teman1.getNbelm());

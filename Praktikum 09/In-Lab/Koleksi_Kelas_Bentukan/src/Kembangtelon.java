@@ -12,7 +12,7 @@ public class Kembangtelon extends Kucing {
         super();
     }
 
-    public Kembangtelon(String nama, double bobot) {
-        super(nama, bobot);
+    public Kembangtelon(String nama, String panggilan, double bobot) {
+        super(nama, panggilan, bobot);
     }
 }
